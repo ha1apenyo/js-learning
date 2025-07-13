@@ -14,7 +14,8 @@ const user = {
     age: 21,
     name: null,
     regrets: "",
-    girl: "Anastasiia"
+    girl: "Anastasiia",
+    city: "Dnipro"
 };
 
 console.log(countInObject(user));
