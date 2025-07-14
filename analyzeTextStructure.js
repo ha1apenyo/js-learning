@@ -6,7 +6,7 @@ function analyzeTextStructure(text) {
     let maxCount = 0;
     let totalWords = words.length;
     let uniqeSet  = new Set();
-    freqMap = {};
+    let freqMap = {};
     
     for (let word of words) {
         word = word.toLowerCase();
@@ -37,6 +37,6 @@ function analyzeTextStructure(text) {
 
 console.log(analyzeTextStructure("This is JS. JS is powerful! JS? Yes, JS."));
 
-if (typeof mofule !== 'undefined') {
+if (typeof module !== 'undefined') {
 module.exports = analyzeTextStructure;
 }
