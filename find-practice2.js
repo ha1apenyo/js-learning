@@ -8,8 +8,8 @@ const products = [
 
 function findDiscountedProduct(categoryName) {
     const resultProduct = products.find(product => 
-        product.category === categoryName
-        && product.discount === true)
+        product.category === categoryName &&
+        product.discount === true)
 
         return resultProduct;
 }
