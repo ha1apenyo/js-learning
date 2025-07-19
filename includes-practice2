@@ -1,0 +1,23 @@
+const allowedRoles = ['admin', 'moderator', 'editor'];
+
+const users = [
+  { name: 'Alice', role: 'admin' },
+  { name: 'Bob', role: 'user' },
+  { name: 'Charlie', role: 'editor' },
+  { name: 'David', role: 'guest' },
+  { name: 'Eva', role: 'moderator' }
+];
+
+
+
+function getAllowedUserNames(users) {
+    let result = [];
+    for (let user of users) {
+        if (allowedRoles.includes(user.role)) {
+            result.push(user.name);
+        }
+    }
+    return result;
+}
+
+console.log(getAllowedUserNames(users));
