@@ -1,0 +1,32 @@
+function slowSquare(x) {
+    for (let i = 0; i < 1e8; i++) {}
+    return (x * x);
+}
+
+function memoize(func) {
+
+    let cache = new Map();
+
+    let wrapper = function(x) {
+        
+        if (cache.has(x)) {
+            return cache.get(x);
+        }
+        let result = func.call(this, x);
+        cache.set(x, result);
+        return result;
+    };
+
+    return wrapper;
+
+}
+
+let fastSquare = memoize(slowSquare);
+
+console.time("1");
+console.log(fastSquare(5));
+console.timeEnd("1");
+
+console.time("2");
+console.log(fastSquare(5));
+console.timeEnd("2");   
