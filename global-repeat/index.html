@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Function Lab</title>
+</head>
+<body>
+    <div id="app">
+
+    <div id="product-list"></div>
+
+    <div id="control-panel">
+        <button id="btn-filter-available">Only Available</button>
+        
+        <label for="sort-select">Sort by:</label>
+        <select id="sort-select">
+            <option value="none">None</option>
+            <option value="asc">Price: Ascending</option>
+            <option value="desc">Price: Descending</option>
+        </select>
+
+        <label for="search-input">Search:</label>
+        <input id="search-input" type="text" placeholder="Search by title...".>
+
+        <div id="search-suggestions"></div>
+
+        <div id="logPanel"></div>
+
+    </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

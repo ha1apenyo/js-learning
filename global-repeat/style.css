@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #f3f4f6;
+    color: #111827;
+}
+#app {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#product-list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#control-panel {
+    flex: 1;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.product-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    transition: box-shadow 0.15s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(15, 23, 42, 0.1);    
+}
+
+.product-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.product-card p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.card-text h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.card-text p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.badge-available {
+    background-color: green;
+}
+
+.badge-unavailable {
+    background-color: red;
+}
+
+#control-panel button,
+#control-panel select {
+    font: inherit;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+}
+
+#control-panel button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #1d4ed8;
+    cursor: pointer;
+}
+
+#control-panel button:hover {
+  background-color: #1d4ed8;
+}
+
+#control-panel select {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#control-panel label {
+  font-weight: 500;
+}
+
+#control-panel > * {
+  align-self: stretch;
+}
+
+#search-input {
+    font: inherit;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb22;   
+}
+
+#search-suggestions {
+    margin-top: 4px;
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    border-radius: 6px;
+    max-height: 180px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.search-suggestions-item {
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.search-suggestions-item:hover {
+    background-color: #cacbce;
+}
